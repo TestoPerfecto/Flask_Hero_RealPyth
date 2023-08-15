@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Predict Sales </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+  </head>
+  <body>
+      <div class="container">
+        <div class="row my-5 pl-3">
+            <h1>Predict Sales</h1>
+        </div>
+        <!-- Starts form section -->
+        <div class="form-container ">
+            <form class="form-horizontal" action = "/predict/" method="post">
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="tv">TV:</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="tv" name="tv">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="radio">Radio:</label>
+                  <div class="col-sm-4">          
+                    <input type="text" class="form-control" id="radio" name="radio">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-2" for="newspaper">Newspaper:</label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="newspaper" name="newspaper">
+                  </div>
+                </div>
+                <div class="form-group row"> 
+                <label class="control-label col-sm-2" for="">&nbsp;</label>                
+                  <div class="col-sm-offset-2 col-sm-4">
+                    <button type="submit" class="btn btn-primary">Predict</button>
+                  </div>
+                </div>
+              </form>
+            <!-- Ends form section -->
+        </div>
+    </div>
+  </body>
+</html>
